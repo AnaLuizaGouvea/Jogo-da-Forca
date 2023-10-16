@@ -1,0 +1,34 @@
+*{
+    background-color: rgb(235, 231, 225);
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2{
+    padding: 10px;
+}
+img{
+    width: 30%;
+    margin-left: 50%;
+}
+.forca{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+.forca-parte{
+    display: none;
+}
+.popup button{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(182, 213, 240);
+    border: 2px solid rgb(136, 161, 184);
+    border-radius: 5px;
+}
