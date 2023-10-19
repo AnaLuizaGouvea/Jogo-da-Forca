@@ -4,47 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@600&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <title>Jogo da Forca</title>
 </head>
 <body>
-    <h1>Jogo da Forca</h1>
-    <p>Você deverá adivinhar a palavra oculta antes de preencher todo o boneco, as letras informadas devem ser minúscula.</p>
+    <h1>JOGO DA FORCA</h1>
+    <p>Seu objetivo nesse jogo é descobrir qual é a palavra que está oculta. Você deverá adivinhar a palavra antes de preencher todo o boneco.</p>
 
     <h2>Palavra</h2>
     <div class="palavra-certa"></div>
 
-    <div class="container-forca">
-        
-            <!-- forca -->
-            <img src="images/7.png">
+    
+    <img src="images/7.png" id="forca">  
+    
 
-            <!-- cabeça -->
-            <img src="images/6.png" class="forca-parte">
-
-            <!-- corpo -->
-            <img src="images/5.png" class="forca-parte">
-
-            <!-- braços -->
-            <img src="images/4.png" class="forca-parte">
-            <img src="images/3.png" class="forca-parte">
-
-            <!-- pernas -->
-            <img src="images/2.png" class="forca-parte">
-            <img src="images/1.png" class="forca-parte">
-
-      
-    </div>
-
-    <div class="letras-erradas">
+    <div>
         <h2>Letras Erradas</h2>
+        <div id="letras-erradas"></div>
     </div>
 
-   <!-- <div class="palavra-repetida">Você já usou essa letra!</div>
-    -->
-    <div class="popup">
-        <h2 class="mensagem"></h2>
-        <button id="btn-jogar" onclick="reiniciar()">Jogar Novamente</button>
-    </div>
+    <button id="btn-iniciar" onclick="iniciarJogo(); desenharLinhas();">Iniciar Jogo</button>
 
     <script src="script.js"></script>
 </body>

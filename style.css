@@ -1,5 +1,4 @@
 *{
-    background-color: rgb(235, 231, 225);
     margin: 0%;
     padding: 0%;
 }
@@ -8,27 +7,39 @@ body{
     flex-direction: column;
     align-items: center;
 }
+h1{
+    font-size: 30px;
+}
 h1, h2{
+    font-family: 'Mitr', sans-serif;
     padding: 10px;
+    margin: 5px;
+}
+p{
+    font-family: 'Mitr', sans-serif;
+    font-size: 20px;
+    max-width:  55%;
+}
+.palavra-certa{
+    margin: 5px;
+    font-size: 25px;
+}
+#letras-erradas{
+    font-size: 25px;
+    margin: 10px;
 }
 img{
-    width: 30%;
-    margin-left: 50%;
+    width: 20%;
+    padding: 10px;
+    margin: auto;
 }
-.forca{
-    fill: transparent;
-    stroke: black;
-    stroke-width: 4px;
-    stroke-linecap: round;
-}
-.forca-parte{
-    display: none;
-}
-.popup button{
+button{
     cursor: pointer;
     padding: 10px;
     font-size: 15px;
     background-color: rgb(182, 213, 240);
     border: 2px solid rgb(136, 161, 184);
     border-radius: 5px;
+    font-family: 'Mitr', sans-serif;
+    margin: 5px;
 }
