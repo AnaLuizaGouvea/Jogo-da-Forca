@@ -1,4 +1,4 @@
-const palavras = ["animal", "dicas", "moeda"] //array de palavras
+const palavras = ["macaco", "elefante", "abelha", "orangotango", "camelo", "guaxinim"] //array de palavras
 const letrasErradas = [] //vai armazenar as letras erradas
 const letrasCertas = [] //vai armazenas as letras certas
 const images = ["images/6.png", "images/5.png", "images/4.png", "images/3.png", "images/2.png", "images/1.png"]
@@ -95,7 +95,8 @@ function avisoLetraRepetida(){
 }
 
 function avisoVocePerdeu(){
-    alert("VOCÊ PERDEU")
+    const palavraMaiscula = palavraSorteada.toUpperCase() 
+    alert("VOCÊ PERDEU. A palavra era: " + palavraMaiscula)
 }
 
 function avisoVoceGanhou(){
